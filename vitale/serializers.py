@@ -13,5 +13,5 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         model = User
         fields = (
             'first_name', 'last_name', 'date_of_birth', 'gender',
-            'department_of_Birth', 'social_security_number'
+            'department_of_birth', 'social_security_number'
         )

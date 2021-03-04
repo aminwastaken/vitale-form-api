@@ -23,7 +23,7 @@ class User(models.Model):
     last_name = models.CharField(max_length=60, validators=[alphanumeric])
     date_of_birth = models.DateField()
     gender = models.CharField(max_length=10, choices=GENDERS)
-    department_of_Birth = models.CharField(max_length=60, choices=DEPARTMENTS)
+    department_of_birth = models.CharField(max_length=60, choices=DEPARTMENTS)
     social_security_number = models.CharField(max_length=60,validators=[numeric],unique=True)
     start_date = models.DateField(default=datetime.now)
     end_date = models.DateField(default=datetime.now)
